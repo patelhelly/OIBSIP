@@ -166,15 +166,6 @@ header ul li a{
     background-image: linear-gradient(#FFEDBC,#ED4264,#F2298C,#f80759);
     clip-path: circle(6% at 17% 88%);
 }
-/* .circle3{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(#FFEDBC,#ED4264,#F2298C,#f80759);
-    clip-path: circle(8% at 37% 64%);
-} */
 .circle3{
     position: absolute;
     top: 0;
