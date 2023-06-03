@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo" alt="Nykaa"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2><span> Nykaa</span><br></h2>
+                  <h3>Your Beauty.Our Passion</h3>
+                <p>Be <b>bold</b> and be <b>good</b></p>
+                <p id="text" class="text">Enhance your natural beauty and embrace your unique style with our wide range of high-quality makeup products, expertly curated to help you create stunning looks for every occasion, only at Nykaa.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="makeup.png" class="makeup">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="makeup.png"  onclick="imgchanger('makeup.png')  ,changetext('Enhance your natural beauty and embrace your unique style with our wide range of high-quality makeup products, expertly curated to help you create stunning looks for every occasion, only at Nykaa.')"></li>
+            <li><img src="skincare.png"onclick="imgchanger('skincare.png'),changetext('Discover the secret to radiant and healthy skin with our wide range of skincare products at Nykaa, designed to nourish, protect, and enhance your natural beauty.')"></li>
+            <li><img src="perfume.png" onclick="imgchanger('perfume.png') ,changetext('Experience the allure of captivating fragrances with our exquisite collection of perfumes, crafted to elevate your senses and leave a lasting impression. Discover your signature scent at Nykaa.')"></li>
+        </ul>
+    </section>
+
+    <script>
+        function imgchanger(anything){
+          document.querySelector('.makeup').src=anything;  
+        }
+        function changetext(string){
+           document.getElementById('text').innerHTML = string;
+            
+        }
+    </script>
+</body>
+</html>
